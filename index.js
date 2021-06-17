@@ -1,8 +1,9 @@
 'use strict';
 
 const Koa = require('koa');
-const app = new Koa();
 const router = require('./lib/routes');
+
+const app = new Koa();
 const PORT = 8080;
 
 app.use(require('koa-bodyparser')());
